@@ -1,48 +1,50 @@
-🤖 Local AI Chatbot
-https://img.shields.io/badge/Python-3.14-blue
-https://img.shields.io/badge/Framework-Streamlit-brightgreen
-https://img.shields.io/badge/License-MIT-yellow
-https://img.shields.io/badge/Status-Active-success
+# 🤖 Local AI Chatbot
 
-A conversational AI chatbot built with Python, Streamlit, and the OpenAI API. This project provides a ChatGPT‑style interface that runs locally in your browser while communicating securely with OpenAI’s language models.
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![Framework](https://img.shields.io/badge/Framework-Streamlit-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
-The application demonstrates how to build an AI‑powered web application using Python, manage API credentials securely with environment variables, and maintain conversation history across multiple chat sessions.
+A conversational AI chatbot built with **Python**, **Streamlit**, and the **OpenAI API**.
 
-Features
-ChatGPT-style conversational interface
+The application provides a ChatGPT-style interface that runs locally in your browser while securely communicating with OpenAI's language models.
 
-Multiple saved conversations
+---
 
-Sidebar navigation for previous chats
+# 📋 Features
 
-Persistent chat history stored locally
+- 💬 ChatGPT-style conversational interface
+- 💾 Saved conversations
+- 📁 Sidebar chat navigation
+- 🔒 Secure API key management
+- 🌐 Streamlit web interface
+- 🤖 OpenAI API integration
+- 📄 Local JSON chat storage
+- 🐍 Python virtual environment support
 
-Streamlit web interface
+---
 
-OpenAI API integration
+# 🛠 Technologies
 
-Secure API key management using environment variables
+- Python 3.14
+- Streamlit
+- OpenAI Python SDK
+- JSON
+- Git
+- GitHub
+- Visual Studio Code
 
-Virtual environment support (.venv)
+---
 
-Technologies Used
-Python 3.14
+# 📁 Project Structure
 
-Streamlit
-
-OpenAI Python SDK
-
-JSON (local chat storage)
-
-Virtual Environments (.venv)
-
-Git & GitHub
-
-Visual Studio Code
-
-Project Structure
-Code
+```text
 local-ai-chatbot/
+│
+├── assets/
+│   ├── chatbot-home.png
+│   ├── saved-chats.png
+│   └── architecture.png
 │
 ├── chatbot.py
 ├── chats.json
@@ -50,132 +52,144 @@ local-ai-chatbot/
 ├── README.md
 ├── .gitignore
 └── .venv/
-Getting Started
-Clone the repository
+```
 
-Create and activate a virtual environment
+---
 
-Install dependencies
+# 🚀 Getting Started
 
-Configure your OpenAI API key
+## 1. Clone the Repository
 
-Run the Streamlit application
-
-Installation
-Clone the repository
-bash
+```bash
 git clone https://github.com/dreevesjr1/local-ai-chatbot.git
+
 cd local-ai-chatbot
-Create a virtual environment (Windows)
-powershell
+```
+
+## 2. Create a Virtual Environment
+
+```powershell
 python -m venv .venv
-Activate the virtual environment:
+```
 
-powershell
+Activate it
+
+```powershell
 .venv\Scripts\activate
-Install dependencies
-bash
+```
+
+## 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-Configure the OpenAI API Key
-Sign into OpenAI → API Keys → Create new secret key → Save it somewhere safe.
+```
 
-PowerShell:
+## 4. Configure Your OpenAI API Key
 
-powershell
+```powershell
 $env:OPENAI_API_KEY="YOUR_API_KEY"
-Never place your API key directly inside your source code.
+```
 
-Running the Application
-bash
+Never place your API key inside your source code.
+
+---
+
+# ▶️ Run the Application
+
+```bash
 python -m streamlit run chatbot.py
+```
+
 Open your browser:
 
-Code
+```
 http://localhost:8501
-Screenshots
-<p align="center">
-<img src="assets/Main_Chat.png" alt="Main Chat Window" width="600"><br>
-<em>Main Chat Window</em>
-</p>
+```
 
-<p align="center">
-<img src="assets/Saved_Conversations.png" alt="Saved Conversations" width="600"><br>
-<em>Saved Conversations</em>
-</p>
+---
 
-Skills Demonstrated
-Python Programming
+# 📸 Screenshots
 
-Object-Oriented Programming
+## Home Screen
 
-REST API Integration
+![Home Screen](assets/chatbot-home.png)
 
-Prompt Engineering
+---
 
-Streamlit Web Development
+## Saved Chats
 
-Environment Variable Management
+![Saved Chats](assets/saved-chats.png)
 
-Virtual Environment Configuration
+---
 
-Git Version Control
+## Architecture
 
-JSON Data Storage
+![Architecture](assets/architecture.png)
 
-Software Debugging
+---
 
-Dependency Management
+# 💡 Skills Demonstrated
 
-Future Improvements
-User authentication
+- Python Programming
+- Object-Oriented Programming
+- REST API Integration
+- Streamlit Development
+- Prompt Engineering
+- Environment Variables
+- Virtual Environments
+- JSON Data Storage
+- Git Version Control
+- Debugging
 
-SQLite database integration
+---
 
-Chat search
+# 🔮 Future Improvements
 
-Chat deletion and renaming
+- SQLite database
+- User authentication
+- Chat search
+- Chat renaming
+- Conversation export
+- PDF upload
+- Image generation
+- Voice input
+- Docker support
+- Cloud deployment
 
-Conversation export (PDF / Markdown)
+---
 
-File uploads
+# 📚 Lessons Learned
 
-Image generation
+This project demonstrates how to:
 
-Voice input
+- Build AI applications with Python
+- Integrate the OpenAI API
+- Create web applications using Streamlit
+- Secure API credentials
+- Persist conversation history
+- Manage project dependencies using virtual environments
+- Organize code with Git and GitHub
 
-Streaming responses
+---
 
-Dark / Light theme support
+# 🤝 Contributing
 
-Docker deployment
+Contributions are welcome.
 
-Cloud deployment (Azure, AWS, Render)
+Fork the repository, create a feature branch, and submit a pull request.
 
-Lessons Learned
-This project provided hands‑on experience building an AI‑powered application using Python and the OpenAI API. Key concepts learned include:
+---
 
-Creating and managing Python virtual environments
+# 👨‍💻 Author
 
-Working with external APIs
+**Daniel Reeves**
 
-Building interactive web applications using Streamlit
-
-Managing project dependencies
-
-Persisting application data locally
-
-Using Git and GitHub for version control
-
-Debugging Python applications
-
-Contributing
-Contributions are welcome!
-Fork the repository, make your changes, and submit a pull request.
-
-Author
-Daniel Reeves  
 Technical Information Systems Student
+
 GitHub: https://github.com/dreevesjr1
 
-License
+---
+
+# 📄 License
+
 This project is licensed under the MIT License.
