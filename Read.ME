@@ -1,0 +1,195 @@
+# 🤖 Local AI Chatbot
+
+A conversational AI chatbot built with **Python**, **Streamlit**, and the **OpenAI API**. This project provides a simple ChatGPT-style interface that runs locally in a web browser while communicating securely with OpenAI's language models.
+
+The application demonstrates how to build an AI-powered web application using Python, manage API credentials securely with environment variables, and maintain conversation history across multiple chat sessions.
+
+---
+
+## Features
+
+- ChatGPT-style conversational interface
+- Multiple saved conversations
+- Sidebar navigation for previous chats
+- Persistent chat history stored locally
+- Streamlit web interface
+- OpenAI API integration
+- Secure API key management using environment variables
+- Virtual environment support (.venv)
+
+---
+
+## Technologies Used
+
+- Python 3.14
+- Streamlit
+- OpenAI Python SDK
+- JSON (local chat storage)
+- Virtual Environments (.venv)
+- Git
+- GitHub
+- Visual Studio Code
+
+---
+
+## Project Structure
+
+```
+local-ai-chatbot/
+│
+├── chatbot.py
+├── chats.json
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── .venv/
+```
+
+---
+
+## Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/dreevesjr1/local-ai-chatbot.git
+
+cd local-ai-chatbot
+```
+
+---
+
+### Create a virtual environment
+
+Windows
+
+```powershell
+python -m venv .venv
+```
+
+Activate the virtual environment
+
+```powershell
+.venv\Scripts\activate
+```
+
+---
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### Configure the OpenAI API Key
+
+Sign into OpenAI https://auth.openai.com/log-in
+
+Select API Keys in the left
+
+Select +Create new secret key in the top right corner
+
+Give it a name, the name is only important for OpenAI profile
+
+Save the API KEY created in a text document
+
+PowerShell
+
+```powershell
+$env:OPENAI_API_KEY="YOUR_API_KEY"
+```
+
+Never place your API key directly inside your source code.
+
+---
+
+## Running the Application
+
+```bash
+python -m streamlit run chatbot.py
+```
+
+Open your browser to
+
+```
+http://localhost:8501
+```
+
+---
+
+## Screenshots
+
+### Main Chat Window
+
+![Screenshots](assets/Main Chat.png)
+
+---
+
+### Saved Conversations
+
+![Screenshots](assets/Saved Conversations.png)
+
+---
+
+## Skills Demonstrated
+
+- Python Programming
+- Object-Oriented Programming
+- REST API Integration
+- Prompt Engineering
+- Streamlit Web Development
+- Environment Variable Management
+- Virtual Environment Configuration
+- Git Version Control
+- JSON Data Storage
+- Software Debugging
+- Dependency Management
+
+---
+
+## Future Improvements
+
+- User authentication
+- SQLite database integration
+- Chat search
+- Chat deletion and renaming
+- Conversation export (PDF / Markdown)
+- File uploads
+- Image generation
+- Voice input
+- Streaming responses
+- Dark / Light theme support
+- Docker deployment
+- Cloud deployment (Azure, AWS, or Render)
+
+---
+
+## Lessons Learned
+
+This project provided practical experience with building an AI-powered application using Python and the OpenAI API. Key concepts learned include:
+
+- Creating and managing Python virtual environments
+- Working with external APIs
+- Building interactive web applications using Streamlit
+- Managing project dependencies
+- Persisting application data locally
+- Using Git and GitHub for version control
+- Debugging Python applications
+
+---
+
+## Author
+
+**Daniel Reeves**
+
+Technical Information Systems Student
+
+GitHub: https://github.com/dreevesjr1
+
+---
+
+## License
+
+This project is licensed under the MIT License.
