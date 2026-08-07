@@ -1,40 +1,47 @@
-# 🤖 Local AI Chatbot
+🤖 Local AI Chatbot
+https://img.shields.io/badge/Python-3.14-blue
+https://img.shields.io/badge/Framework-Streamlit-brightgreen
+https://img.shields.io/badge/License-MIT-yellow
+https://img.shields.io/badge/Status-Active-success
 
-A conversational AI chatbot built with **Python**, **Streamlit**, and the **OpenAI API**. This project provides a simple ChatGPT-style interface that runs locally in a web browser while communicating securely with OpenAI's language models.
+A conversational AI chatbot built with Python, Streamlit, and the OpenAI API. This project provides a ChatGPT‑style interface that runs locally in your browser while communicating securely with OpenAI’s language models.
 
-The application demonstrates how to build an AI-powered web application using Python, manage API credentials securely with environment variables, and maintain conversation history across multiple chat sessions.
+The application demonstrates how to build an AI‑powered web application using Python, manage API credentials securely with environment variables, and maintain conversation history across multiple chat sessions.
 
----
+Features
+ChatGPT-style conversational interface
 
-## Features
+Multiple saved conversations
 
-- ChatGPT-style conversational interface
-- Multiple saved conversations
-- Sidebar navigation for previous chats
-- Persistent chat history stored locally
-- Streamlit web interface
-- OpenAI API integration
-- Secure API key management using environment variables
-- Virtual environment support (.venv)
+Sidebar navigation for previous chats
 
----
+Persistent chat history stored locally
 
-## Technologies Used
+Streamlit web interface
 
-- Python 3.14
-- Streamlit
-- OpenAI Python SDK
-- JSON (local chat storage)
-- Virtual Environments (.venv)
-- Git
-- GitHub
-- Visual Studio Code
+OpenAI API integration
 
----
+Secure API key management using environment variables
 
-## Project Structure
+Virtual environment support (.venv)
 
-```
+Technologies Used
+Python 3.14
+
+Streamlit
+
+OpenAI Python SDK
+
+JSON (local chat storage)
+
+Virtual Environments (.venv)
+
+Git & GitHub
+
+Visual Studio Code
+
+Project Structure
+Code
 local-ai-chatbot/
 │
 ├── chatbot.py
@@ -43,150 +50,132 @@ local-ai-chatbot/
 ├── README.md
 ├── .gitignore
 └── .venv/
-```
+Getting Started
+Clone the repository
 
----
+Create and activate a virtual environment
 
-## Installation
+Install dependencies
 
-### Clone the repository
+Configure your OpenAI API key
 
-```bash
+Run the Streamlit application
+
+Installation
+Clone the repository
+bash
 git clone https://github.com/dreevesjr1/local-ai-chatbot.git
-
 cd local-ai-chatbot
-```
-
----
-
-### Create a virtual environment
-
-Windows
-
-```powershell
+Create a virtual environment (Windows)
+powershell
 python -m venv .venv
-```
+Activate the virtual environment:
 
-Activate the virtual environment
-
-```powershell
+powershell
 .venv\Scripts\activate
-```
-
----
-
-### Install dependencies
-
-```bash
+Install dependencies
+bash
 pip install -r requirements.txt
-```
+Configure the OpenAI API Key
+Sign into OpenAI → API Keys → Create new secret key → Save it somewhere safe.
 
----
+PowerShell:
 
-### Configure the OpenAI API Key
-
-Sign into OpenAI https://auth.openai.com/log-in
-
-Select API Keys in the left
-
-Select +Create new secret key in the top right corner
-
-Give it a name, the name is only important for OpenAI profile
-
-Save the API KEY created in a text document
-
-PowerShell
-
-```powershell
+powershell
 $env:OPENAI_API_KEY="YOUR_API_KEY"
-```
-
 Never place your API key directly inside your source code.
 
----
-
-## Running the Application
-
-```bash
+Running the Application
+bash
 python -m streamlit run chatbot.py
-```
+Open your browser:
 
-Open your browser to
-
-```
+Code
 http://localhost:8501
-```
+Screenshots
+<p align="center">
+<img src="assets/Main_Chat.png" alt="Main Chat Window" width="600"><br>
+<em>Main Chat Window</em>
+</p>
 
----
+<p align="center">
+<img src="assets/Saved_Conversations.png" alt="Saved Conversations" width="600"><br>
+<em>Saved Conversations</em>
+</p>
 
-## Screenshots
+Skills Demonstrated
+Python Programming
 
-### Main Chat Window
-![Main Chat](assets/Main_Chat.png)
+Object-Oriented Programming
 
-### Saved Conversations
-![Saved Conversations](assets/Saved_Conversations.png)
+REST API Integration
 
+Prompt Engineering
 
----
+Streamlit Web Development
 
-## Skills Demonstrated
+Environment Variable Management
 
-- Python Programming
-- Object-Oriented Programming
-- REST API Integration
-- Prompt Engineering
-- Streamlit Web Development
-- Environment Variable Management
-- Virtual Environment Configuration
-- Git Version Control
-- JSON Data Storage
-- Software Debugging
-- Dependency Management
+Virtual Environment Configuration
 
----
+Git Version Control
 
-## Future Improvements
+JSON Data Storage
 
-- User authentication
-- SQLite database integration
-- Chat search
-- Chat deletion and renaming
-- Conversation export (PDF / Markdown)
-- File uploads
-- Image generation
-- Voice input
-- Streaming responses
-- Dark / Light theme support
-- Docker deployment
-- Cloud deployment (Azure, AWS, or Render)
+Software Debugging
 
----
+Dependency Management
 
-## Lessons Learned
+Future Improvements
+User authentication
 
-This project provided practical experience with building an AI-powered application using Python and the OpenAI API. Key concepts learned include:
+SQLite database integration
 
-- Creating and managing Python virtual environments
-- Working with external APIs
-- Building interactive web applications using Streamlit
-- Managing project dependencies
-- Persisting application data locally
-- Using Git and GitHub for version control
-- Debugging Python applications
+Chat search
 
----
+Chat deletion and renaming
 
-## Author
+Conversation export (PDF / Markdown)
 
-**Daniel Reeves**
+File uploads
 
+Image generation
+
+Voice input
+
+Streaming responses
+
+Dark / Light theme support
+
+Docker deployment
+
+Cloud deployment (Azure, AWS, Render)
+
+Lessons Learned
+This project provided hands‑on experience building an AI‑powered application using Python and the OpenAI API. Key concepts learned include:
+
+Creating and managing Python virtual environments
+
+Working with external APIs
+
+Building interactive web applications using Streamlit
+
+Managing project dependencies
+
+Persisting application data locally
+
+Using Git and GitHub for version control
+
+Debugging Python applications
+
+Contributing
+Contributions are welcome!
+Fork the repository, make your changes, and submit a pull request.
+
+Author
+Daniel Reeves  
 Technical Information Systems Student
-
 GitHub: https://github.com/dreevesjr1
 
----
-
-## License
-
+License
 This project is licensed under the MIT License.
